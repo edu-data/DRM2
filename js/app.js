@@ -367,16 +367,19 @@
   }
 
   function handleComplete(skipDemo) {
-    var gender = '', schoolLocation = '', careerDecision = '';
+    var gender = '', schoolLocation = '', schoolType = '', careerDecision = '';
     if (!skipDemo) {
       var genderEl = document.querySelector('input[name="gender"]:checked');
       var locEl = $id('schoolLocation');
+      var typeEl = $id('schoolType');
       var careerEl = document.querySelector('input[name="careerDecision"]:checked');
       gender = genderEl ? genderEl.value : '';
       schoolLocation = locEl ? locEl.value : '';
+      schoolType = typeEl ? typeEl.value : '';
       careerDecision = careerEl ? careerEl.value : '';
       if (!gender) { showToast('\u26A0\uFE0F \uC131\uBCC4\uC744 \uC120\uD0DD\uD574 \uC8FC\uC138\uC694.'); return; }
       if (!schoolLocation) { showToast('\u26A0\uFE0F \uD559\uAD50 \uC18C\uC7AC\uC9C0\uB97C \uC120\uD0DD\uD574 \uC8FC\uC138\uC694.'); return; }
+      if (!schoolType) { showToast('\u26A0\uFE0F \uD559\uAD50 \uC720\uD615\uC744 \uC120\uD0DD\uD574 \uC8FC\uC138\uC694.'); return; }
       if (!careerDecision) { showToast('\u26A0\uFE0F \uC9C4\uB85C \uACB0\uC815 \uC5EC\uBD80\uB97C \uC120\uD0DD\uD574 \uC8FC\uC138\uC694.'); return; }
     }
     navigateTo('completionScreen');
@@ -384,7 +387,7 @@
       phoneNumber: $id('phoneNumber').value.trim(),
       positiveActivities: collectActivityData('positive'),
       negativeActivities: collectActivityData('negative'),
-      demographics: { gender: gender, schoolLocation: schoolLocation, careerDecision: careerDecision }
+      demographics: { gender: gender, schoolLocation: schoolLocation, schoolType: schoolType, careerDecision: careerDecision }
     };
     fetch(APP_CONFIG.GAS_URL, {
       method: 'POST',

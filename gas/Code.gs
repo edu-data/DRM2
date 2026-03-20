@@ -19,7 +19,7 @@ function doPost(e) {
     var respHeaders = [
       'Timestamp', 'RespondentID', 'PhoneNumber',
       'PositiveCount', 'NegativeCount',
-      'Gender', 'SchoolLocation', 'CareerDecision'
+      'Gender', 'SchoolLocation', 'SchoolType', 'CareerDecision'
     ];
 
     var respSheet = getOrCreateSheet(ss, 'Responses', respHeaders);
@@ -32,6 +32,7 @@ function doPost(e) {
       negativeActivities.length,
       demo.gender || '',
       demo.schoolLocation || '',
+      demo.schoolType || '',
       demo.careerDecision || ''
     ]);
 
