@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DRM2 설문 — 고등학생의 학교 일상 경험 조사</title>
+  <meta name="description" content="일상재구성법(DRM)을 활용하여 고등학생의 학교 일과 중 일상 활동과 정서를 파악하는 연구 설문입니다." />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/config.js"></script>
+</head>
+
+<body>
+
+  <div class="app-container">
+
+    <!-- ===== HEADER ===== -->
+    <header class="app-header">
+      <span class="app-header__badge">Research Survey 2026</span>
+      <h1 class="app-header__title">『나의 학교생활 돌아보기』</h1>
+      <p class="app-header__subtitle">
+        일상재구성법(DRM) 기반 학교 일상 경험 조사
+      </p>
+    </header>
+
+    <!-- ===== PROGRESS BAR ===== -->
+    <nav class="progress-bar" id="progressBar">
+      <div class="progress-step active" data-step="1">
+        <div class="progress-step__circle">1
+          <span class="progress-step__label">안내문</span>
+        </div>
+      </div>
+      <div class="progress-step" data-step="1-2">
+        <div class="progress-step__line"></div>
+      </div>
+      <div class="progress-step" data-step="2">
+        <div class="progress-step__circle">2
+          <span class="progress-step__label">긍정 활동</span>
+        </div>
+      </div>
+      <div class="progress-step" data-step="2-3">
+        <div class="progress-step__line"></div>
+      </div>
+      <div class="progress-step" data-step="3">
+        <div class="progress-step__circle">3
+          <span class="progress-step__label">부정 활동</span>
+        </div>
+      </div>
+      <div class="progress-step" data-step="3-4">
+        <div class="progress-step__line"></div>
+      </div>
+      <div class="progress-step" data-step="4">
+        <div class="progress-step__circle">4
+          <span class="progress-step__label">배경조사</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ============================================================
+       PAGE 1: 안내문 (Intro)
+       ============================================================ -->
+    <section class="part-section active" id="pageIntro">
+
+      <div class="intro-hero">
+        <div class="intro-hero__icon">📝</div>
+        <h2 class="intro-hero__title">고등학생의 학교 일상 경험 조사</h2>
+        <p class="intro-hero__subtitle">학교생활 중 경험한 활동과 그때의 감정을 기록하는 설문입니다</p>
+      </div>
+
+      <!-- 연구 안내 -->
+      <div class="glass-card intro-card">
+        <h3 class="intro-card__heading">📋 연구 안내</h3>
+        <p class="intro-card__text" style="font-size:0.85rem; margin-bottom: 0.6rem;">
+          안녕하세요! 본 조사는 <strong>고등학생 여러분의 학교 일과 중 일상 활동</strong>을 파악하고,
+          각 활동에서 느끼는 <strong>정서(긍정, 부정, 의미/보람)</strong>를 알아보기 위한 연구입니다.
+        </p>
+        <p class="intro-card__text" style="font-size:0.85rem; margin-bottom: 0.6rem;">
+          여러분의 솔직한 응답은 고등학생의 학교생활을 이해하고 더 나은 교육 환경을 만드는 데 큰 도움이 됩니다.
+        </p>
+      </div>
+
+      <!-- 설문 진행 순서 -->
+      <div class="glass-card intro-card">
+        <h3 class="intro-card__heading">🔢 설문 진행 순서</h3>
+        <div class="intro-step">
+          <div class="intro-step__number">1</div>
+          <div class="intro-step__content">
+            <div class="intro-step__title">긍정 활동 기록</div>
+            <p class="intro-step__desc">학교 일과 중 기분 좋았거나 만족스러웠던 활동 3~10개를 기록합니다.</p>
+          </div>
+        </div>
+        <div class="intro-step">
+          <div class="intro-step__number">2</div>
+          <div class="intro-step__content">
+            <div class="intro-step__title">부정 활동 기록</div>
+            <p class="intro-step__desc">학교 일과 중 기분이 안 좋았거나 불만족스러웠던 활동 3~10개를 기록합니다.</p>
+          </div>
+        </div>
+        <div class="intro-step">
+          <div class="intro-step__number">3</div>
+          <div class="intro-step__content">
+            <div class="intro-step__title">배경조사</div>
+            <p class="intro-step__desc">성별, 학교 소재지, 진로 결정 여부를 응답합니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 개인정보 & 사례비 -->
+      <div class="glass-card intro-card">
+        <p class="intro-card__text" style="font-size:0.85rem;">
+          🔒 응답 내용은 <strong>익명으로 처리</strong>되며, 연구 목적 이외에는 사용되지 않습니다.
+        </p>
+        <hr style="border:none; border-top:1px solid rgba(255,255,255,0.1); margin:0.8rem 0;">
+        <p class="intro-card__text" style="font-size:0.85rem;">
+          💰 설문에 참여해 주신 분께 <strong>사례비를 지급</strong>합니다. 아래 핸드폰 번호를 입력해 주세요.
+        </p>
+        <div class="form-group" style="max-width: 360px; margin: 0.8rem auto 0;">
+          <label class="form-label" for="phoneNumber">📱 핸드폰 번호</label>
+          <input type="tel" class="form-input" id="phoneNumber" placeholder="예: 010-1234-5678"
+            pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" required
+            style="text-align: center; font-size: 1.1rem; letter-spacing: 1px;" />
+          <p style="font-size:0.78rem; color:var(--text-secondary); margin-top:0.3rem; text-align:center;">* 사례비 지급을
+            위해 반드시 입력해 주세요</p>
+        </div>
+      </div>
+
+      <!-- 소요 시간 -->
+      <div class="glass-card intro-card">
+        <p class="intro-card__text" style="font-size:0.85rem; text-align:center;">
+          ⏱️ 예상 소요 시간: <strong>약 10~15분</strong>
+        </p>
+      </div>
+
+      <div class="nav-buttons" style="justify-content:center;">
+        <button class="btn btn-primary btn-start-survey" id="startSurveyBtn" type="button">
+          📝 설문 시작하기
+        </button>
+      </div>
+
+    </section>
+
+    <!-- ============================================================
+       PAGE 2: 긍정 활동 기록
+       ============================================================ -->
+    <section class="part-section" id="pagePositive">
+      <div class="section-badge section-badge--positive">😊 긍정 활동</div>
+      <h2 class="part-title">기분 좋았거나 만족스러웠던 활동</h2>
+      <p class="part-description">
+        학교 일과 중 <strong>기분이 좋았거나 의미있었던(만족스러웠던) 활동</strong>을 떠올려 주세요.<br>
+        <strong>최소 3개, 최대 10개</strong>까지 기록할 수 있습니다.
+      </p>
+
+      <div class="activity-count" id="positiveCount">
+        <span>✅</span> <span id="positiveCountText">활동 0개</span> <span style="color:var(--text-muted); font-size:0.72rem;">(최소 3개)</span>
+      </div>
+
+      <div id="positiveList">
+        <!-- Dynamically added -->
+      </div>
+
+      <button class="add-activity-btn" id="addPositiveBtn" type="button">
+        ＋ 긍정 활동 추가
+      </button>
+
+      <div class="nav-buttons">
+        <button class="btn btn-secondary" id="backToIntroBtn" type="button">
+          ← 이전
+        </button>
+        <button class="btn btn-primary" id="toNegativeBtn" type="button">
+          다음: 부정 활동 →
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       PAGE 3: 부정 활동 기록
+       ============================================================ -->
+    <section class="part-section" id="pageNegative">
+      <div class="section-badge section-badge--negative">😞 부정 활동</div>
+      <h2 class="part-title">기분이 안 좋았거나 불만족스러웠던 활동</h2>
+      <p class="part-description">
+        학교 일과 중 <strong>기분이 안 좋았거나 의미 없었던(불만족스러웠던) 활동</strong>을 떠올려 주세요.<br>
+        <strong>최소 3개, 최대 10개</strong>까지 기록할 수 있습니다.
+      </p>
+
+      <div class="activity-count" id="negativeCount">
+        <span>✅</span> <span id="negativeCountText">활동 0개</span> <span style="color:var(--text-muted); font-size:0.72rem;">(최소 3개)</span>
+      </div>
+
+      <div id="negativeList">
+        <!-- Dynamically added -->
+      </div>
+
+      <button class="add-activity-btn" id="addNegativeBtn" type="button">
+        ＋ 부정 활동 추가
+      </button>
+
+      <!-- 배경조사 이미 응답 안내 -->
+      <div class="glass-card" style="margin-top:1rem; padding:0.8rem 1rem; border-left:3px solid var(--accent); font-size:0.82rem; color:var(--text-secondary);">
+        💡 <strong>배경조사(성별·소재지·진로)</strong>에 이미 응답하신 경우, 아래 <strong>"설문 제출"</strong> 버튼을 눌러 바로 제출해 주세요.
+      </div>
+
+      <div class="nav-buttons" style="flex-wrap: wrap; gap: 0.5rem;">
+        <button class="btn btn-secondary" id="backToPositiveBtn" type="button">
+          ← 이전
+        </button>
+        <button class="btn btn-primary" id="submitFromNegativeBtn" type="button" style="background: linear-gradient(135deg, #10b981, #059669);">
+          ✅ 설문 제출
+        </button>
+        <button class="btn btn-primary" id="toDemoBtn" type="button">
+          다음: 배경조사 →
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       PAGE 4: 배경조사 (Demographics)
+       ============================================================ -->
+    <section class="part-section" id="pageDemo">
+      <div class="section-badge section-badge--info">📊 배경조사</div>
+      <h2 class="part-title">배경 정보</h2>
+      <p class="part-description">
+        마지막으로 간단한 배경 정보를 입력해 주세요.
+      </p>
+
+      <!-- 성별 -->
+      <div class="glass-card demo-card">
+        <div class="form-group">
+          <label class="form-label">성별</label>
+          <div class="radio-group" id="genderGroup">
+            <label class="radio-option"><input type="radio" name="gender" value="남"><span>남</span></label>
+            <label class="radio-option"><input type="radio" name="gender" value="여"><span>여</span></label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 학교 소재지 -->
+      <div class="glass-card demo-card">
+        <div class="form-group">
+          <label class="form-label" for="schoolLocation">학교 소재지</label>
+          <select class="form-select" id="schoolLocation">
+            <option value="">선택해 주세요</option>
+            <option value="서울">서울</option>
+            <option value="부산">부산</option>
+            <option value="대구">대구</option>
+            <option value="인천">인천</option>
+            <option value="광주">광주</option>
+            <option value="대전">대전</option>
+            <option value="울산">울산</option>
+            <option value="세종">세종</option>
+            <option value="경기">경기</option>
+            <option value="강원">강원</option>
+            <option value="충북">충북</option>
+            <option value="충남">충남</option>
+            <option value="전북">전북</option>
+            <option value="전남">전남</option>
+            <option value="경북">경북</option>
+            <option value="경남">경남</option>
+            <option value="제주">제주</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- 진로 결정 여부 -->
+      <div class="glass-card demo-card">
+        <div class="form-group">
+          <label class="form-label">진로 결정 여부</label>
+          <div class="radio-group" id="careerGroup">
+            <label class="radio-option"><input type="radio" name="careerDecision" value="결정함"><span>결정함</span></label>
+            <label class="radio-option"><input type="radio" name="careerDecision" value="고민 중"><span>고민 중</span></label>
+            <label class="radio-option"><input type="radio" name="careerDecision" value="결정하지 않음"><span>결정하지 않음</span></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-buttons">
+        <button class="btn btn-secondary" id="backToNegativeBtn" type="button">
+          ← 이전
+        </button>
+        <button class="btn btn-primary" id="completeBtn" type="button">
+          ✅ 설문 완료
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       COMPLETION SCREEN
+       ============================================================ -->
+    <section class="part-section" id="completionScreen">
+      <div class="completion-screen">
+        <div class="completion-screen__icon">🎉</div>
+        <h2 class="completion-screen__title">설문이 완료되었습니다!</h2>
+        <p class="completion-screen__desc">
+          소중한 응답에 감사드립니다.
+        </p>
+        <div id="submitStatus" class="submit-status">
+          <div class="submit-status__spinner"></div>
+          <span class="submit-status__text">응답을 제출하고 있습니다...</span>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /.app-container -->
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

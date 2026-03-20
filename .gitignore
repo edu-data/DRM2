@@ -1,0 +1,22 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Gemini / AI agent artifacts
+.gemini/
+.agent/
+.agents/
+
+# Node modules (if any)
+node_modules/
+
+# Environment / secrets
+.env
+.env.local
