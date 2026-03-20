@@ -9,19 +9,26 @@
   var MAX_ACTIVITIES = 10;
 
   var TIME_OPTIONS = [
-    '\uAD50\uACFC\uC2DC\uAC04(\uAD6D\uC5B4)',
-    '\uAD50\uACFC\uC2DC\uAC04(\uC218\uD559)',
-    '\uAD50\uACFC\uC2DC\uAC04(\uC601\uC5B4)',
-    '\uAD50\uACFC\uC2DC\uAC04(\uC0AC\uD68C/\uC5ED\uC0AC)',
-    '\uAD50\uACFC\uC2DC\uAC04(\uACFC\uD559)',
-    '\uAD50\uACFC\uC2DC\uAC04(\uAE30\uD0C0\uACFC\uBAA9)',
-    '\uC810\uC2EC\uC2DC\uAC04',
-    '\uD559\uAD50\uBC29\uACFC\uD6C4\uC2DC\uAC04',
-    '\uB3D9\uC544\uB9AC\uC2DC\uAC04',
-    '\uC0C1\uB2F4\uC2DC\uAC04',
-    '\uD559\uC6D0\uC2DC\uAC04',
-    '\uADC0\uAC00\uD6C4\uC2DC\uAC04',
-    '\uAE30\uD0C0'
+    '교과시간(국어)',
+    '교과시간(수학)',
+    '교과시간(영어)',
+    '교과시간(사회/역사)',
+    '교과시간(과학)',
+    '교과시간(음악)',
+    '교과시간(미술)',
+    '교과시간(체육)',
+    '교과시간(정보)',
+    '교과시간(한국사)',
+    '교과시간(제2외국어)',
+    '교과시간(진로선택과목)',
+    '교과시간(기타과목)',
+    '점심시간',
+    '학교방과후시간',
+    '동아리시간',
+    '상담시간',
+    '학원시간',
+    '귀가후시간',
+    '기타'
   ];
 
   var COMPANION_OPTIONS = [
