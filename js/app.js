@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  var MIN_ACTIVITIES = 3;
+  var MIN_ACTIVITIES = 1;
   var MAX_ACTIVITIES = 10;
 
   var TIME_OPTIONS = [
